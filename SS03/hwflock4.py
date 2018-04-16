@@ -1,0 +1,15 @@
+print("Hello, my name is Huyen and these are my ship sizes")
+list=[5,7,300,90,24,50,75]
+print(list)
+n=max(list)
+print("now my biggest sheep has size ",end="")
+print(n,end="")
+print(" let's shear it")
+list[2]=8
+print("After shearing, here is my flock")
+print(list)
+print("my flock has size in total: ",end='')
+b=sum(list)
+print(b)
+print("I would get ",end='')
+print(b*2,"$")
