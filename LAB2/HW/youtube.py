@@ -11,12 +11,12 @@ from youtube_dl import YoutubeDL
 # print(dl)
 
 # sample 3: Download audio
-# options={
-#     'format':"bestaudio/audio"
-# }
-# dl=YoutubeDL(options)
-# dl.download(['https://www.youtube.com/watch?v=c3jHlYsnEe0'])
-# print(dl)
+options={
+'format':"bestaudio/audio"
+}
+dl=YoutubeDL(options)
+dl.download(['https://www.youtube.com/watch?v=CIJrGH5TFjY'])
+print(dl)
 
 #sample 4: search and download the first videoOffset
 # options={

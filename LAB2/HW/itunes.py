@@ -26,8 +26,8 @@ from youtube_dl import YoutubeDL
 for song in item_list:
     options={
         'default_search':'ytsearch',
-        'max_dowloads': 1,
-        'format': :'bestaudio/audio'
+        'max_dowloads': 10,
+        'format':'bestaudio/audio'
     }
     dl=YoutubeDL(options)
     dl.download([song_name])
