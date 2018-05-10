@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask intro</title>
+  </head>
+  <body>
+    <h3>C4E blog</h3>
+
+    <!-- Jinja2-->
+    {% for p in posts %}
+    <h5>{{ p.title }}</h5>
+    <p>
+      {{ p.content}}
+    </p>
+    <i>
+      By:
+      {% if p.gender==0%}
+      Mis
+      {% elif p.gender==1%}
+      Mr
+      {% endif %}
+
+      {{ p.author}}</i>
+    {% endfor %}
+
+    <!-- <h5> Thơ củ lạc</h5>
+    <p>Lạy chúa trên cao turn down for what </p>
+    <i>By: Nhật Minh</i>
+
+    <h5>Em không nghĩ ra</h5>
+    <p>Không nghĩ ra gì</p>
+    <i>By: Trường dingtea</i>
+
+    <h5>Sầm Sơn</h5>
+    <p>
+      Sầm Sơn sóng đánh dập dồn
+    </p>
+    <i>By: Quang Dũng </i> -->
+
+  </body>
+</html>

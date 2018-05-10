@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Flask intro</title>
+  </head>
+  <body>
+    <h3> C4E blog</h3>
+    {% for post in posts %}
+    <h4> {{ post['title']}}</h4>
+    <p>
+      {{post['content']}}
+    </p>
+    <i> By:
+      {% if post.gender ==0%}
+      Misss
+      {% elif post.gender ==1%}
+      Mr
+      {% endif %}
+
+      {{post.author}}
+    </i>
+    {% endfor %}
+  </body>
+</html>

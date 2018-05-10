@@ -1,4 +1,4 @@
-from turtle import*
+\from turtle import*
 def draw_star(x,y,length):
     for i in range(5):
         forward(length)
